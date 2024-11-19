@@ -31,6 +31,8 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+        env:
+          CI: true
         if: ${{ matrix.node-version == '20.x' }}
 
       - name: "Build the project"
