@@ -47,4 +47,4 @@ jobs:
         # if: ${{ matrix.node-version == '20.x' }}
 
       - name: "Build the project"
-        run: pnpm run build --if-present
+        run: pnpm run build
