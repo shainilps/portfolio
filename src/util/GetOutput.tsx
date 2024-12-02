@@ -15,7 +15,7 @@ export function GetOutput(
       setCommandList([]);
       return "";
     case "blogs":
-      window.open("https://codeshaine.hashnode.dev/", "_blank");
+      window.open("https://codeshaine.bearblog.dev/", "_blank");
       return "";
     case "resume":
       const url = "/resume.pdf";
@@ -33,66 +33,67 @@ export function GetOutput(
             <h1 className="lg:text-2xl md:text-2xl text-xl font-bold text-[#f6c177] mb-2">
               About Shainil P.S.
             </h1>
-            <p className="mb-2">
-              Shainil is a passionate programmer skilled in both{" "}
-              <span className="text-[#f6c177]">frontend</span> and{" "}
-              <span className="text-[#f6c177]">backend development</span>. With
-              expertise in <span className="text-[#f6c177]">JavaScript</span>,{" "}
-              <span className="text-[#f6c177]">TypeScript</span>, and{" "}
-              <span className="text-[#f6c177]">Go</span>, he enjoys solving
-              challenging problems and creating efficient, scalable
-              applications.
-            </p>
-            <p className="mb-2">
-              His interests span across{" "}
-              <span className="text-[#f6c177]">open source</span> contributions,{" "}
-              <span className="text-[#f6c177]">system design</span>, and{" "}
-              <span className="text-[#f6c177]">cloud technologies</span>, always
-              pushing boundaries to innovate and learn. Shainil is as
-              comfortable building sleek user interfaces as he is crafting
-              robust backend systems.
-            </p>{" "}
-            <p className="mb-2">
-              Apart from coding, he enjoys watching anime and playing games.
-              These hobbies help him unwind and stay creatively inspired.
-            </p>
-            <p className="mb-2">
-              If you’re looking to collaborate or learn more, feel free to reach
-              out!
-            </p>
-            <p className="text-xs mt-2">- ChatGPT</p>
+            <div>
+              <p className="mt-2">
+                Who’s this guy? Oh, just{" "}
+                <span className="text-[#f6c177]">Shainil</span>, a full-stack
+                developer who thinks his love for{" "}
+                <span className="text-[#f6c177]">JavaScript</span> and{" "}
+                <span className="text-[#f6c177]">TypeScript</span> makes him
+                special (spoiler: it does, kinda). He’s all about building
+                scalable apps, diving deep into{" "}
+                <span className="text-[#f6c177]">DSA</span>, and pretending to
+                be normal while absolutely geeking out over{" "}
+                <span className="text-[#f6c177]">Go</span>.
+              </p>
+              <p className="mt-2">
+                This portfolio? Yeah, he made it terminal-themed because
+                "aesthetic," but really, he just wanted to show off. Behind the
+                scenes, he’s working on cool stuff and trying not to
+                overcomplicate things (failing occasionally).
+              </p>
+              <p className="mt-2">
+                Oh, and don’t let his chill vibe fool you—he’s serious about
+                clean, efficient code. But ask him about switching stacks, and
+                suddenly it’s 'JavaScript forever!' one day, 'Go is the future!'
+                the next, and now he’s tossing around AI and functional
+                languages like he’s collecting programming skills like Pokémon.
+                Pick a side, man.
+              </p>
+              <p className="text-xs mt-2">
+                - ChatGPT (I had to write this because Shainil refuses to brag
+                about himself)
+              </p>
+            </div>
           </div>
         </div>
       );
     case "goals":
       return (
         <div className="">
-          <p className="">
-            I aim to work in a{" "}
-            <span className="text-[#f6c177]">supportive environment</span> with
-            ample opportunities for growth and development.
-          </p>
           <ul className="list-disc list-inside">
             <li className="m-2 text-[#31748f]">
-              I aspire to make meaningful{" "}
+              gaining{" "}
+              <span className="text-[#f6c177]">Industry Experience</span>
+            </li>
+            <li className="m-2 text-[#31748f]">
+              Making meaningful{" "}
               <span className="text-[#f6c177]">open source</span> contributions
-              to projects that inspire innovation and collaboration.
             </li>
             <li className="m-2 text-[#31748f]">
-              I am passionate about building{" "}
-              <span className="text-[#f6c177]">terminal applications</span> that
-              are efficient, user-friendly, and solve real-world problems.
+              Explore and Excel{" "}
+              <span className="text-[#f6c177]">system design</span> and{" "}
+              <span className="text-[#f6c177]">cloud technologies</span>
             </li>
             <li className="m-2 text-[#31748f]">
-              I aim to explore and excel in{" "}
-              <span className="text-[#f6c177]">backend development</span>,{" "}
-              <span className="text-[#f6c177]">system design</span>, and{" "}
-              <span className="text-[#f6c177]">cloud technologies</span>.
+              learning{" "}
+              <span className="text-[#f6c177]">terminal applications</span>{" "}
+              development with golang
             </li>
           </ul>
           <p className=" ">
-            My ultimate goal is to work on projects that challenge my skills and
-            allow me to make a meaningful impact in the tech world.
+            Last updated on{" "}
+            <span className="text-[#f6c177]">2-12-2024</span>
           </p>
         </div>
       );
@@ -228,13 +229,13 @@ export function GetOutput(
             {
               heading: "Frameworks & Libraries",
               skills: [
-                "Express",
                 "Node.js",
+                "Express",
                 "React",
+                "Next.js",
                 "Tailwind CSS",
                 "Prisma",
                 "Mongoose",
-                "Next.js",
                 "Jest",
                 "Vitest",
               ],
@@ -242,17 +243,18 @@ export function GetOutput(
             {
               heading: "Tools,Platforms & Databases",
               skills: [
-                "Linux",
                 "Git",
                 "GitHub",
                 "MongoDb",
                 "PostgreSQL",
+                "Docker",
                 "AWS EC2",
                 "AWS S3",
                 "Netlify",
                 "GitHub WorkFlow(CI/CD)",
                 "Vercel",
-                "Docker",
+                "Linux",
+                "neovim",
               ],
             },
           ].map((section) => (
