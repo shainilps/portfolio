@@ -92,8 +92,7 @@ export function GetOutput(
             </li>
           </ul>
           <p className=" ">
-            Last updated on{" "}
-            <span className="text-[#f6c177]">2-12-2024</span>
+            Last updated on <span className="text-[#f6c177]">2-12-2024</span>
           </p>
         </div>
       );

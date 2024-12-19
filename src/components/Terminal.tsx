@@ -37,30 +37,6 @@ export default function Terminal() {
 
         <CommandArea />
       </div>
-
-      {/* <div className="absolute bottom-4 right-4 flex space-x-2">
-        <button
-          className="bg-[#c4a7e7] text-[#191724] px-3 py-2 rounded-md"
-          title="Up Arrow"
-          onClick={() => handleKeyPress("ArrowUp")}
-        >
-          ↑
-        </button>
-        <button
-          className="bg-[#c4a7e7] text-[#191724] px-3 py-2 rounded-md"
-          title="Down Arrow"
-          onClick={() => handleKeyPress("ArrowDown")}
-        >
-          ↓
-        </button>
-        <button
-          className="bg-[#c4a7e7] text-[#191724] px-3 py-2 rounded-md"
-          title="Tab"
-          onClick={() => handleKeyPress("Tab")}
-        >
-          Tab
-        </button>
-      </div> */}
     </div>
   );
 }
