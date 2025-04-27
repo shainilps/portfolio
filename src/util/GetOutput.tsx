@@ -6,9 +6,10 @@ import {
   FaLinkedin,
   FaEnvelope,
 } from "react-icons/fa";
+import { projects, skills } from "../data/personal";
 export function GetOutput(
   command: string,
-  setCommandList: React.Dispatch<React.SetStateAction<Command[]>>
+  setCommandList: React.Dispatch<React.SetStateAction<Command[]>>,
 ): JSX.Element | "" {
   switch (command.toLowerCase().trim()) {
     case "clear":
@@ -68,94 +69,8 @@ export function GetOutput(
           </div>
         </div>
       );
-    case "goals":
-      return (
-        <div className="">
-          <ul className="list-disc list-inside">
-            <li className="m-2 text-[#31748f]">
-              gaining{" "}
-              <span className="text-[#f6c177]">Industry Experience</span>
-            </li>
-            <li className="m-2 text-[#31748f]">
-              Making meaningful{" "}
-              <span className="text-[#f6c177]">open source</span> contributions
-            </li>
-            <li className="m-2 text-[#31748f]">
-              Explore and Excel{" "}
-              <span className="text-[#f6c177]">system design</span> and{" "}
-              <span className="text-[#f6c177]">cloud technologies</span>
-            </li>
-            <li className="m-2 text-[#31748f]">
-              learning{" "}
-              <span className="text-[#f6c177]">terminal applications</span>{" "}
-              development with golang
-            </li>
-          </ul>
-          <p className=" ">
-            Last updated on <span className="text-[#f6c177]">2-12-2024</span>
-          </p>
-        </div>
-      );
-    case "projects":
-      const projects = [
-        {
-          projName: "Carter – Full-Stack E-Commerce Platform",
-          shortDesc:
-            "A full-featured e-commerce application built with modern web technologies.",
-          gbLink: "https://github.com/codeshaine/carter",
-          liveLink: "",
-          techTags: [
-            "React",
-            "Node.js",
-            "Express",
-            "Prisma",
-            "PostgreSQL",
-            "Redis",
-            "Passport.js",
-          ],
-        },
-        {
-          projName: "Ekashunyam Fest Website",
-          shortDesc:
-            "Dynamic inter-college fest website for event registration and management with JWT authentication.",
-          gbLink: "https://github.com/axioz-dev",
-          liveLink: "https://ekashunyam.tech/",
-          techTags: [
-            "React",
-            "Express",
-            "MongoDB",
-            "Tailwind",
-            "AWS",
-            "JWT",
-            "GSAP",
-          ],
-        },
-        {
-          projName: "Joke API",
-          shortDesc:
-            "A simple API for managing jokes with CRUD operations and Docker containerization.",
-          gbLink: "https://github.com/codeshaine/joke-api",
-          liveLink: "",
-          techTags: ["Express", "Docker"],
-        },
-        {
-          projName: "URL Shortener",
-          shortDesc:
-            "A URL shortening service built with Go, PostgreSQL, and Chi for routing, with click tracking and expiration functionality.",
-          gbLink: "https://github.com/codeshaine/url-shortner",
-          liveLink: "",
-          techTags: ["Go", "PostgreSQL", "Chi", "Docker"],
-        },
-        {
-          projName: "CLI TODO Application",
-          shortDesc:
-            "A command-line TODO application written in Go to manage tasks with add, complete, delete, and list functionalities.",
-          gbLink: "https://github.com/codeshaine/go-todo-app",
-          liveLink: "",
-          techTags: ["Go", "CLI"],
-        },
-      ];
 
+    case "projects":
       return (
         <div className="">
           {projects.map((item, index) => {
@@ -220,43 +135,7 @@ export function GetOutput(
     case "skills":
       return (
         <div>
-          {[
-            {
-              heading: "Languages",
-              skills: ["JavaScript", "TypeScript", "Go", "C++", "HTML/CSS"],
-            },
-            {
-              heading: "Frameworks & Libraries",
-              skills: [
-                "Node.js",
-                "Express",
-                "React",
-                "Next.js",
-                "Tailwind CSS",
-                "Prisma",
-                "Mongoose",
-                "Jest",
-                "Vitest",
-              ],
-            },
-            {
-              heading: "Tools,Platforms & Databases",
-              skills: [
-                "Git",
-                "GitHub",
-                "MongoDb",
-                "PostgreSQL",
-                "Docker",
-                "AWS EC2",
-                "AWS S3",
-                "Netlify",
-                "GitHub WorkFlow(CI/CD)",
-                "Vercel",
-                "Linux",
-                "neovim",
-              ],
-            },
-          ].map((section) => (
+          {skills.map((section) => (
             <div key={section.heading} className="mb-4">
               <h2 className="text-lg lg:text-xl md:text-xl mb-2 text-[#f6c177]">
                 {section.heading}
@@ -352,16 +231,16 @@ export function GetOutput(
                 desc: "- My Professional journey",
               },
               {
-                comm: "goals",
-                desc: "- Explore my interests",
-              },
-              {
                 comm: "blogs",
                 desc: "- A collection of my thoughts and occasional rants",
               },
               {
                 comm: "clear",
                 desc: "- Clear the Terminal",
+              },
+              {
+                comm: "exit",
+                desc: "Go back to GUI",
               },
               {
                 comm: "sudo rm -rf /*",
@@ -380,6 +259,9 @@ export function GetOutput(
           </div>
         </>
       );
+    case "exit":
+      window.location.href = "/";
+      return "";
     case "sudo rm -rf /*":
       const newWindow = window.open("about:blank", "_blank");
       if (newWindow) {
