@@ -11,13 +11,11 @@ export default function Terminal() {
          w-full flex items-center"
         >
           {/* buttons */}
-          <div
-            className="flex items-center gap-2 ml-2"
-            onClick={() => navigate("/")}
-          >
+          <div className="flex items-center gap-2 ml-2">
             <div
               className="w-3.5 h-3.5 rounded-full bg-[#f7768e] hover:bg-red-500"
               title="Close"
+              onClick={() => navigate("/")}
             ></div>
             <div
               className="w-3.5 h-3.5 rounded-full bg-[#e0af68] hover:bg-yellow-500"

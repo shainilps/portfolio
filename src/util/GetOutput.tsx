@@ -5,8 +5,9 @@ import {
   FaTwitter,
   FaLinkedin,
   FaEnvelope,
+  FaCalendar,
 } from "react-icons/fa";
-import { projects, skills } from "../data/personal";
+import { experience, projects, skills } from "../data/personal";
 export function GetOutput(
   command: string,
   setCommandList: React.Dispatch<React.SetStateAction<Command[]>>,
@@ -67,6 +68,49 @@ export function GetOutput(
               </p>
             </div>
           </div>
+        </div>
+      );
+
+    case "experience":
+      return (
+        <div className="">
+          {experience.map((item, index) => (
+            <div
+              key={index}
+              className="bg-gradient-to-r from-[#292639] to-[#2b5e72] p-6 rounded-lg mb-6 border-b-4 border-b-[#f6c177] hover:shadow-lg transition-shadow duration-300"
+            >
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <p className="text-[#f6c177] text-2xl font-bold">
+                  {item.role}
+                  <span className="text-[#f6c177]/70 text-xl font-semibold ml-1">
+                    {" "}
+                    @{item.company}
+                  </span>
+                </p>
+
+                <span className="text-[#9ccfd8] text-sm mt-2 md:mt-0">
+                  {item.period}
+                </span>
+              </div>
+
+              <ul className="list-disc list-inside text-[#c4a7e7] mb-4 space-y-2">
+                {item.description.map((point, idx) => (
+                  <li key={idx}>{point}</li>
+                ))}
+              </ul>
+
+              <div className="flex flex-wrap gap-2">
+                {item.technologies.map((tech, idx) => (
+                  <span
+                    key={idx}
+                    className="bg-[#2e3440] text-[#c4a7e7] px-3 py-1 rounded-lg shadow-md text-sm"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       );
 
@@ -187,6 +231,12 @@ export function GetOutput(
               username: "shainilps.work@gmail.com",
               icon: <FaEnvelope />,
             },
+            {
+              social: "Book a Call",
+              link: "https://calendly.com/codeshaine/30min",
+              username: "book now",
+              icon: <FaCalendar />,
+            },
           ].map((item) => {
             return (
               <div className="flex items-center mb-2">
@@ -240,7 +290,7 @@ export function GetOutput(
               },
               {
                 comm: "exit",
-                desc: "Go back to GUI",
+                desc: "- Go back to GUI",
               },
               {
                 comm: "sudo rm -rf /*",

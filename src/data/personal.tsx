@@ -1,42 +1,98 @@
-export const skills = [
+import { ExperienceItem, Project, TechStackItem, TILCategory } from "../types";
+
+export function Link({ text, link }: { text: string; link: string }) {
+  return (
+    <a className="underline text-blue-900" target="_blank" href={link}>
+      {text}
+    </a>
+  );
+}
+
+export const tilCategories: TILCategory[] = [
+  {
+    date: "April 2025",
+    learned: [
+      <>
+        Built <Link text="yam" link="https://github.com/codeshaine/yam" />
+      </>,
+      <>
+        Built a{" "}
+        <Link
+          text="Video Transcoding"
+          link="https://github.com/codeshaine/transcode"
+        />{" "}
+        Application
+      </>,
+    ],
+  },
+  {
+    date: "March 2025",
+    learned: [
+      <>
+        Built{" "}
+        <Link
+          link="https://github.com/codeshaine/ekashuunyam-monorepo"
+          text="ekashunyam"
+        />
+      </>,
+      <>
+        Built{" "}
+        <Link
+          link="https://github.com/codeshaine/laughing-pancake"
+          text="Jetara"
+        />
+      </>,
+      <>Turned off copilot :/</>,
+      <>
+        Learned some <Link text="elm" link="https://elm-lang.org/" />
+      </>,
+      <>Started using zed</>,
+    ],
+  },
+  {
+    date: "Feb 2025",
+    learned: [
+      <>
+        Learned about cryptography, wrote a{" "}
+        <Link
+          text="blog post"
+          link="https://codeshaine.bearblog.dev/crypgology-using-golang/"
+        />
+      </>,
+    ],
+  },
+  {
+    date: "Jan 2025",
+    learned: [
+      <>
+        Built{" "}
+        <Link
+          link="https://github.com/codeshaine/curlify"
+          text="curlify
+             "
+        />
+      </>,
+    ],
+  },
+];
+
+export const skills: TechStackItem[] = [
   {
     heading: "Languages",
     skills: ["JavaScript", "TypeScript", "Go", "C++", "HTML/CSS"],
   },
   {
-    heading: "Frameworks & Libraries",
-    skills: [
-      "Node.js",
-      "Express",
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "Prisma",
-      "Mongoose",
-      "Jest",
-      "Vitest",
-    ],
+    heading: "Frameworks",
+    skills: ["Express", "React", "Next.js", "Echo (go)"],
   },
+  { heading: "Database", skills: ["PostgreSQL, MongoDB", "Redis"] },
   {
-    heading: "Tools,Platforms & Databases",
-    skills: [
-      "Git",
-      "GitHub",
-      "MongoDb",
-      "PostgreSQL",
-      "Docker",
-      "AWS EC2",
-      "AWS S3",
-      "Netlify",
-      "GitHub WorkFlow(CI/CD)",
-      "Vercel",
-      "Linux",
-      "neovim",
-    ],
+    heading: "DevOps",
+    skills: ["Docker", "AWS EC2", "AWS S3", "GitHub WorkFlow(CI/CD)"],
   },
 ];
 
-export const projects = [
+export const projects: Project[] = [
   {
     projName: "Carter: Full-Stack E-Commerce Platform",
     shortDesc:
@@ -108,3 +164,28 @@ export const projects = [
     techTags: ["Go", "CLI"],
   },
 ];
+
+export const experience: ExperienceItem[] = [
+  {
+    company: "Codelab Systems",
+    role: "Mern Stack Intern",
+    period: "Dec 2024 - Dec 2024",
+    description: [
+      "Learned about mern stack by the instructors",
+      "Developed React based application with react hooks",
+      "Develped a E-Commerce rip off for the company",
+      "Learned about deployment, web securities and many more",
+    ],
+    technologies: ["JavaScript", "React", "Node.js", "Vercel"],
+  },
+];
+
+export const social = {
+  email: "shainilps.work@gmail.com",
+  github: "https://github.com/codeshaine",
+  linkedin: "https://linkedin.com/in/shainilps",
+  twitter: "https://twitter.com/code_shaine",
+  resume: "/resume.pdf",
+  calendar: "https://calendly.com/codeshaine/30min",
+  blog: "https://codeshaine.bearblog.dev",
+};

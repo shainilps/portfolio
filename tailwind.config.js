@@ -4,8 +4,14 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+      },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
+      },
+      colors: {
+        cblack: "#161925",
       },
       typography: {
         DEFAULT: {

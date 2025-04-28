@@ -20,12 +20,6 @@ export default function Header() {
           Use <span className="text-[#f6c177]">↑</span> and{" "}
           <span className="text-[#f6c177]">↓</span> to navigate command history.
         </p>
-        <p>
-          want to{" "}
-          <a href="/" className="text-[#f6c177] underline">
-            go back?
-          </a>
-        </p>
       </div>
     </div>
   );
