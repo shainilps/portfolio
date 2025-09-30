@@ -10,6 +10,18 @@ export function Link({ text, link }: { text: string; link: string }) {
 
 export const tilCategories: TILCategory[] = [
   {
+    date: "September 2025",
+    learned: [
+      <>
+        changed my github username to my name <b>shainilps</b> from{" "}
+        <b>codeshaine</b>
+      </>,
+      <>my internship is over!!, wil join company as a fulltime tomorrow.</>,
+      <>contributed to my company projects from last two months</>,
+      <>made p2ms script for bsv from scratch. felt good.</>,
+    ],
+  },
+  {
     date: "May 2025",
     learned: [
       <>
@@ -32,13 +44,13 @@ export const tilCategories: TILCategory[] = [
     date: "April 2025",
     learned: [
       <>
-        Built <Link text="yam" link="https://github.com/codeshaine/yam" />
+        Built <Link text="yam" link="https://github.com/shainilps/yam" />
       </>,
       <>
         Built a{" "}
         <Link
           text="Video Transcoding"
-          link="https://github.com/codeshaine/transcode"
+          link="https://github.com/shainilps/transcode"
         />{" "}
         Application
       </>,
@@ -50,14 +62,14 @@ export const tilCategories: TILCategory[] = [
       <>
         Built{" "}
         <Link
-          link="https://github.com/codeshaine/ekashuunyam-monorepo"
+          link="https://github.com/shainilps/ekashuunyam-monorepo"
           text="ekashunyam"
         />
       </>,
       <>
         Built{" "}
         <Link
-          link="https://github.com/codeshaine/laughing-pancake"
+          link="https://github.com/shainilps/laughing-pancake"
           text="Jetara"
         />
       </>,
@@ -75,7 +87,7 @@ export const tilCategories: TILCategory[] = [
         Learned about cryptography, wrote a{" "}
         <Link
           text="blog post"
-          link="https://codeshaine.bearblog.dev/crypgology-using-golang/"
+          link="https://shainilps.bearblog.dev/crypgology-using-golang/"
         />
       </>,
     ],
@@ -86,7 +98,7 @@ export const tilCategories: TILCategory[] = [
       <>
         Built{" "}
         <Link
-          link="https://github.com/codeshaine/curlify"
+          link="https://github.com/shainilps/curlify"
           text="curlify
              "
         />
@@ -116,7 +128,7 @@ export const projects: Project[] = [
     projName: "Carter: Full-Stack E-Commerce Platform",
     shortDesc:
       "A full-featured e-commerce application built with modern web technologies.",
-    gbLink: "https://github.com/codeshaine/carter",
+    gbLink: "https://github.com/shainilps/carter",
     liveLink: "",
     techTags: [
       "JavaScript",
@@ -164,21 +176,21 @@ export const projects: Project[] = [
     projName: "Yam",
     shortDesc:
       "A Tool for setting up Linters, Formatters, Test and Git Hooks and many more for Typescript and Javascript projects",
-    gbLink: "https://github.com/codeshaine/yam",
+    gbLink: "https://github.com/shainilps/yam",
     liveLink: "",
     techTags: ["TypeScript", "Nodejs"],
   },
   {
     projName: "Curlify",
     shortDesc: "A Terminal User Interface API testing tool similar to postman",
-    gbLink: "https://github.com/codeshaine/curlify",
+    gbLink: "https://github.com/shainilps/curlify",
     liveLink: "",
     techTags: ["Go", "BubbleTea", "Bubbles"],
   },
   {
     projName: "Transcode",
     shortDesc: "Multi Threaded video Transcoding and Compression System",
-    gbLink: "https://github.com/codeshaine/transcode",
+    gbLink: "https://github.com/shainilps/transcode",
     liveLink: "",
     techTags: ["Go", "MultiThreading"],
   },
@@ -186,7 +198,7 @@ export const projects: Project[] = [
   {
     projName: "Echoes",
     shortDesc: "HTMX + Go based anonnymous message sharing app",
-    gbLink: "https://github.com/codeshaine/echoes",
+    gbLink: "https://github.com/shainilps/echoes",
     liveLink: "",
     techTags: ["Go", "HTMX", "AWS"],
   },
@@ -194,7 +206,7 @@ export const projects: Project[] = [
     projName: "CLI TODO Application",
     shortDesc:
       "A Command-Line TODO application written in Go to manage tasks with add, complete, delete, and list functionalities.",
-    gbLink: "https://github.com/codeshaine/go-todo-app",
+    gbLink: "https://github.com/shainilps/go-todo-app",
     liveLink: "",
     techTags: ["Go", "CLI"],
   },
@@ -212,10 +224,10 @@ export const experience: ExperienceItem[] = [
 
 export const social = {
   email: "shainilps.work@gmail.com",
-  github: "https://github.com/codeshaine",
+  github: "https://github.com/shainilps",
   linkedin: "https://linkedin.com/in/shainilps",
   twitter: "https://twitter.com/code_shaine",
   resume: "/resume.pdf",
   calendar: "https://calendly.com/codeshaine/30min",
-  blog: "https://codeshaine.bearblog.dev",
+  blog: "https://shainilps.bearblog.dev",
 };
