@@ -228,6 +228,6 @@ export const social = {
   linkedin: "https://linkedin.com/in/shainilps",
   twitter: "https://twitter.com/code_shaine",
   resume: "/resume.pdf",
-  calendar: "https://calendly.com/codeshaine/30min",
+  calendar: "https://cal.com/shainilps/30min",
   blog: "https://shainilps.bearblog.dev",
 };

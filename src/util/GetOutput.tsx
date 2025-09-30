@@ -17,7 +17,7 @@ export function GetOutput(
       setCommandList([]);
       return "";
     case "blogs":
-      window.open("https://codeshaine.bearblog.dev/", "_blank");
+      window.open("https://shainilps.bearblog.dev/", "_blank");
       return "";
     case "resume":
       const url = "/resume.pdf";
@@ -209,8 +209,8 @@ export function GetOutput(
           {[
             {
               social: "Github",
-              link: "https://github.com/codeshaine",
-              username: "codeshaine",
+              link: "https://github.com/shainilps",
+              username: "shainilps",
               icon: <FaGithub />,
             },
             {
@@ -233,7 +233,7 @@ export function GetOutput(
             },
             {
               social: "Book a Call",
-              link: "https://calendly.com/codeshaine/30min",
+              link: "https://cal.com/shainilps/30min",
               username: "book now",
               icon: <FaCalendar />,
             },
