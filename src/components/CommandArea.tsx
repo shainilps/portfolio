@@ -27,16 +27,6 @@ export default function CommandArea() {
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, [commandList]);
-  // useEffect(() => {
-  //   const handleKeyDown = () => {
-  //     inputRef.current?.focus();
-  //   };
-
-  //   window.addEventListener("keydown", handleKeyDown);
-  //   return () => {
-  //     window.removeEventListener("keydown", handleKeyDown);
-  //   };
-  // }, []);
 
   return (
     <div className="flex-grow overflow-y-auto overflow-x-hidden space-y-2 max-h-[calc(100vh-100px)] px-4">
