@@ -5,7 +5,7 @@ export default function Header() {
         {/* prettier-ignore */}
         <pre className="whitespace-pre text-[#c4a7e7] text-xs mx-auto lg:text-xl ">
             {`
-    ___   _             _          _   _ 
+    ___   _             _          _   _
    / __| | |_    __ _  (_)  _ _   (_) | |
    \\__ \\ | ' \\  / _\` | | | | ' \\  | | | |
    |___/ |_||_| \\__,_| |_| |_||_| |_| |_|
@@ -19,6 +19,12 @@ export default function Header() {
         <p>
           Use <span className="text-[#f6c177]">↑</span> and{" "}
           <span className="text-[#f6c177]">↓</span> to navigate command history.
+        </p>
+        <p>
+          want to{" "}
+          <a href="/" className="text-[#f6c177] underline">
+            go back?
+          </a>
         </p>
       </div>
     </div>
