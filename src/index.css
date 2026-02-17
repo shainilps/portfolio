@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar for Webkit Brows    ers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height for horizontal scrollbar (optional) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4a4a4a; /* Thumb color */
+  border-radius: 8px; /* Optional rounded corners */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1f1f1f; /* Track color */
+  border-radius: 8px; /* Optional rounded corners */
+}
+
+/* For Firefox */
+.scrollable-area {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #4a4a4a #1f1f1f; /* Thumb and Track color */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
